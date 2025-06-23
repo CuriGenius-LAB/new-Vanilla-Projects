@@ -23,7 +23,7 @@ export function renderDoctorTab(Doctor = ""){
 
     const html = Doctor.data.map((data) => {
 
-        return `<div class="swiper-slide" data-role=${data.specialization}>
+        return `<div class="swiper-slide" data-role="${data.specialization}">
                     <div class="doctor-card">
                         <div class="doctor-image">
                             <a href="#"><img src="images/${data.image}" alt=""></a>
@@ -52,43 +52,32 @@ export function renderDoctorTab(Doctor = ""){
 
     const slides = document.querySelectorAll(".swiper-slide");
 
-    const slidesContentMapping = {
+    function getSlidesContentMapping() {
 
-        cardiologist: [
-            
-            "cardiologist" , 
-            
-            "orthopedist" , 
-            
-            "gynecologist" ,
+    const isMobile = window.innerWidth < 992;
 
+        return {
+
+            cardiologist: [
+            "cardiologist",
             "orthopedist",
-
+            "gynecologist",
+            "orthopedist",
             "nutritionist"
-        
-        ],
+            ],
 
-        orthopedist: [
+            orthopedist: isMobile
+            ? ["orthopedist"]
+            : ["orthopedist", "nutritionist"],
             
-            "orthopedist" ,
-
-            "nutritionist" 
-            
-        ],
-
-        nutritionist: [
-            
-            "nutritionist" 
-            
-        ],
-
-        gynecologist: [
-
-            "gynecologist"
-        ]
-    }
+            nutritionist: ["nutritionist"],
+            gynecologist: ["gynecologist"]
+        };
+    }   
 
     function filterContent(Role){
+
+        const slidesContentMapping = getSlidesContentMapping();
 
         const slidesToShow = Array.from(slides).filter((slide) => {
 
