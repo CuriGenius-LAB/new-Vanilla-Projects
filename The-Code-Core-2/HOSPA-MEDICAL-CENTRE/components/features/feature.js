@@ -7,6 +7,11 @@ export function renderFeature(Feature = ""){
 
             const element = document.querySelector(target.Selector);
 
+            if(!element){
+
+                return false
+            }
+
             const feature = Feature.data.map((data , index) => (
 
                 `<div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">

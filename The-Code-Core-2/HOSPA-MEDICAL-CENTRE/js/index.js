@@ -60,7 +60,7 @@ function mountComponents(wrapper){
 // function to render a page //
 
 
-function renderPage(pageUrl = "../pages/home/home.html"){
+function renderPage(pageUrl = "pages/home/home.html"){
 
     const virtualDom = document.createElement("div");
 
