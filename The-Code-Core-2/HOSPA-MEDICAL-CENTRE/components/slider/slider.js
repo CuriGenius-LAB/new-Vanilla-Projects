@@ -19,7 +19,7 @@ export function renderSlider(Slider = ""){
 
     const html = Slider.data.map((data , index) => {
 
-        return `<li class="splide__slide splide-slide${index + 1}" style="background-image: var(--bg-image-url);">
+        return `<li class="splide__slide splide-slide${index + 1}" style="background-image: url('images/${data.image}');">
                     
             <div class="container slider-content-container p-0">
                 <div class="row">
