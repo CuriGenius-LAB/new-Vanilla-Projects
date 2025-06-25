@@ -1,9 +1,38 @@
 
-.header-main-container{
+#header-container{
 
     display: var(--flex);
 
     justify-content: var(--justify-content-center);
+
+    box-shadow: var(--shadow-medium);
+
+    background: var(--neutral-white);
+
+    transform: translateY(0);
+
+    transition: 0.5s all ease;
+
+}
+
+#header-container.sticky{
+
+    position: var(--position-fixed);
+
+    top: var(--pos-0);
+
+    width:  var(--width-full);
+
+    z-index: var(--z-modal);
+
+    animation: liftUp 0.6s ease;
+
+}
+
+
+@keyframes liftUp{
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
 }
 
 #Navbar-Section{

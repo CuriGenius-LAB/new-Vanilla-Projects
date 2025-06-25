@@ -122,6 +122,39 @@
 }
 
 
+.copyright-section{
+
+    display: var(--flex);
+
+    justify-content: var(--justify-content-center);
+
+    padding: var(--padding-tb-25-lr-none);
+
+    background: var(--color-light-blue);
+
+    color: var(--color-slate-blue);
+
+}
+
+
+.footer-copyright span , .footer-copyright a{
+
+    color: var(--color-navy-deep);
+
+    font-size: var(--font-base);
+
+    font-weight: var(--font-medium);
+
+    text-transform: var(--text-transform-capitalize);
+}
+
+
+.footer-copyright a{
+
+    text-decoration: var(--text-decoration-none);
+}
+
+
 @media screen and (max-width: 1200px) {
     
     #footer-link1{

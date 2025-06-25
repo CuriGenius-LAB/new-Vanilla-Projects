@@ -3,6 +3,10 @@ import { pageComponents } from "./data.js";
 
 import { componentsRenderer } from "./renderer.js";
 
+import { createscrollTriggers } from "./homeData/scrollEvents/scrollConfig.js";
+
+import { setTriggers } from "./homeData/scrollEvents/scrollEvents.js";
+
 // function to load a component or page //
 
 function loadHtml(url){
@@ -103,8 +107,14 @@ function renderPage(pageUrl = "pages/home/home.html"){
             }
 
         })
-        
-    });
+
+        const triggers = createscrollTriggers();
+
+        if(triggers){
+
+            setTriggers(triggers);
+        }
+    })
 }
 
 renderPage()
@@ -146,7 +156,7 @@ export function launchHomeSlider(){
 // Function to Launch A Tab Slider //
 
 
-export function launchTabSlider(centeredSlides = false){
+export function launchTabSlider(){
 
     return new Swiper(".swiper" , {
 
