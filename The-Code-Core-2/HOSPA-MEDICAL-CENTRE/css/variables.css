@@ -8,11 +8,6 @@
     font-family: "Libre Franklin";
 }
 
-body{
-
-    overflow-x: hidden;
-}
-
 
 :root{
 
@@ -641,7 +636,16 @@ body{
 
  
   --shadow-glow: 0 0 10px rgba(0, 255, 255, 0.6);
-      
+
+   /* overflow css variables */
+
+  --overflow-default: visible;
+
+  --overflow-hidden: hidden;
+
+  --overflow-scroll: scroll;
+
+  --overflow-auto: auto;
 }
 
 
