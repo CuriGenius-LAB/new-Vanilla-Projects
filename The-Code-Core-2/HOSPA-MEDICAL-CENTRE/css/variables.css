@@ -8,6 +8,11 @@
     font-family: "Libre Franklin";
 }
 
+body{
+
+    overflow-x: hidden;
+}
+
 
 :root{
 
