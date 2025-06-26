@@ -122,11 +122,15 @@ function renderPage(pageUrl = "pages/home/home.html"){
         
         const btnTop = document.querySelector(".back-to-top");
 
-        btnTop.addEventListener("click" , function(){
+        if(btnTop){
 
-           scrollToTop(btnTop)
+            btnTop.addEventListener("click" , function(){
 
-        })
+                scrollToTop(btnTop)
+
+            })
+
+        }
 
     })
 }

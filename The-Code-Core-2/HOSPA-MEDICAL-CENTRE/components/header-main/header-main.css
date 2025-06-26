@@ -9,11 +9,9 @@
 
     background: var(--neutral-white);
 
-    transform: translateY(0);
-
     transition: 0.5s all ease;
 
-    overflow-x: var(--overflow-hidden);
+    overflow: var(--overflow-hidden);
 
 }
 
@@ -27,14 +25,17 @@
 
     z-index: var(--z-modal);
 
-    animation: liftUp 0.6s ease;
+    animation: SlideDown 0.6s ease;
 
 }
 
 
-@keyframes liftUp{
+@keyframes SlideDown{
+
   0% { transform: translateY(-100%); }
+
   100% { transform: translateY(0); }
+
 }
 
 #Navbar-Section{
