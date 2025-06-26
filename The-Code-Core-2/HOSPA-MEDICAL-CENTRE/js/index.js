@@ -7,6 +7,8 @@ import { createscrollTriggers } from "./homeData/scrollEvents/scrollConfig.js";
 
 import { setTriggers } from "./homeData/scrollEvents/scrollEvents.js";
 
+import { scrollToTop } from "./homeData/scrollEvents/scrollEvents.js";
+
 // function to load a component or page //
 
 function loadHtml(url){
@@ -114,6 +116,18 @@ function renderPage(pageUrl = "pages/home/home.html"){
 
             setTriggers(triggers);
         }
+
+
+        // go to top event functionality starts here //
+        
+        const btnTop = document.querySelector(".back-to-top");
+
+        btnTop.addEventListener("click" , function(){
+
+           scrollToTop(btnTop)
+
+        })
+
     })
 }
 

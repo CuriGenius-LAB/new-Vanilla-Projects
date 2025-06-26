@@ -329,6 +329,8 @@
 
     /* border css variables */
 
+    --border-none: none;
+
     --border-width-thin: 1px;
 
     --border-width-regular: 2px;
@@ -479,6 +481,8 @@
 
     --pos-2: 8px;
 
+    --pos-2-5: 10px;
+
     --pos-3: 12px;
 
     --pos-3_5: 15px;
@@ -488,6 +492,8 @@
     --pos-4_5: 20px;
 
     --pos-5: 24px;
+
+    --pos-5-5: 30px;
 
     --pos-6: 32px;
 

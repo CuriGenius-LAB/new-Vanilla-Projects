@@ -26,3 +26,20 @@ function handleScrollEvents(){
 
 
 window.addEventListener("scroll" , handleScrollEvents);
+
+
+export function scrollToTop(){
+
+    setTimeout(() => {
+
+        window.scrollTo({
+
+            top: 0,
+
+            behavior: 'smooth',
+
+        });
+
+    } , 300)
+
+}
