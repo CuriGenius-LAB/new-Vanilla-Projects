@@ -152,6 +152,13 @@
 .footer-copyright a{
 
     text-decoration: var(--text-decoration-none);
+
+    transition: var(--transition-default);
+}
+
+.footer-copyright a:hover{
+
+    color: var(--color-emergency);
 }
 
 .back-to-top{
@@ -244,4 +251,14 @@
 
         margin-top: var(--margin-lgs) !important;
     }
+}
+
+
+@media screen and (max-width: 576px){
+
+    .back-to-top{
+
+        right: 20px;
+    }
+
 }
