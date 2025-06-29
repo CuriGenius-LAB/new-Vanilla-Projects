@@ -94,20 +94,31 @@
 .swiper-slide{
 
     display: none;
-    
+
+}
+
+.swiper-slide.fade{
+
+    opacity: 0;
+
+    transition: 0.15s opacity linear;
+}
+
+.swiper-slide.active{
+
+   display: block;
+
 }
 
 .swiper-slide.show{
 
-    display: block;
-    
+    opacity: 1;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   display: none !important;
 }
-
 
 
 .custom-button-prev i,

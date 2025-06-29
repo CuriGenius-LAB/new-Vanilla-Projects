@@ -1,0 +1,141 @@
+
+.search-popup{
+
+    position: var(--position-fixed);
+
+    top: var(--pos-0);
+
+    z-index: var(--z-loader);
+
+    display: var(--none);
+
+    justify-content: var(--justify-content-center);
+
+    width: var(--width-full);
+
+    height: var(--view-height);
+
+    cursor: auto;
+}
+
+
+.search-popup.active{
+
+    display: var(--flex);
+
+    cursor: url("../../images/cross-btn.png") , pointer;
+}
+
+
+.search-popup-overlay{
+
+    position: var(--position-absolute);
+
+    top: var(--pos-0);
+
+    z-index: var(--z-overlay);
+
+    width: var(--width-full);
+
+    height: var(--height-full);
+
+    background: var(--color-navy-deep);
+
+    opacity: var(--opacity-80);
+
+}
+
+
+.search-popup-content{
+
+    position: var(--position-relative);
+
+    top: var(--pos-40-5p);
+
+    z-index: var(--z-content);
+
+    width: var(--container-medium);
+
+    padding: var(--padding-tb-30-lr-15);
+}
+
+.search-popup-form{
+
+    display: var(--flex);
+
+    justify-content: var(--justify-content-center);
+
+    align-items: var(--align-items-center);
+
+    transition: var(--transition-default);
+
+    opacity: var(--opacity-0);
+
+    transform: scaleX(0);
+}
+
+.search-popup-form.show{
+
+    opacity: var(--opacity-100);
+
+    transform: scaleX(1);
+}
+
+.search-popup-form input{
+
+    width: var(--width-full);
+
+    height: var(--height-xxl2);
+
+    padding: var(--padding-t15-r80-b15-r25);
+
+    border: var(--border-none);
+
+    outline: var(--outline-none);
+
+    border-radius: var(--radius-50);
+
+    background: var(--color-navy-deep);
+
+    color: var(--neutral-white);
+
+    font-size: var(--font-md);
+}
+
+
+.search-popup-form input::placeholder{
+
+    color: var(--neutral-white);
+}
+
+
+.search-popup-form button{
+
+    position: var(--position-absolute);
+
+    right: -1px;
+
+    width: var(--width-xxl2);
+
+    height: var(--height-xxl2);
+
+    padding: var(--padding-none);
+
+    border: var(--border-none);
+
+    border-radius: var(--radius-full);
+
+    background: var(--color-purple-light);
+
+    color: var(--neutral-white);
+
+    font-size: var(--font-lg2);
+
+    transition: var(--transition-default);
+}
+
+
+.search-popup-form button:hover{
+
+    background: var(--primary-blue);
+}

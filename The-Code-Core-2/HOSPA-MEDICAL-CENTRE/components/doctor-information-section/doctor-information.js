@@ -23,7 +23,7 @@ export function renderDoctorTab(Doctor = ""){
 
     const html = Doctor.data.map((data) => {
 
-        return `<div class="swiper-slide" data-role="${data.specialization}">
+        return `<div class="swiper-slide fade" data-role="${data.specialization}">
                     <div class="doctor-card">
                         <div class="doctor-image">
                             <a href="#"><img src="images/${data.image}" alt=""></a>
@@ -87,13 +87,17 @@ export function renderDoctorTab(Doctor = ""){
         
         slides.forEach((slide) => {
 
-            slide.classList.remove("show");
+            slide.classList.remove("active" , "show");
 
         })
 
         slidesToShow.forEach((filteredSlide) => {
 
-            filteredSlide.classList.add("show");
+            filteredSlide.classList.add("active");
+
+            setTimeout(() => {
+                filteredSlide.classList.add("show");
+            }, 300);
         })
 
         const swiperWrapper = document.querySelector(".swiper-wrapper");

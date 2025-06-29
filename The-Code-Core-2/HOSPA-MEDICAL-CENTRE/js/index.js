@@ -9,6 +9,8 @@ import { setTriggers } from "./homeData/scrollEvents/scrollEvents.js";
 
 import { scrollToTop } from "./homeData/scrollEvents/scrollEvents.js";
 
+import { popupSearch } from "../components/search/search-popup.js";
+
 // function to load a component or page //
 
 function loadHtml(url){
@@ -132,6 +134,7 @@ function renderPage(pageUrl = "pages/home/home.html"){
 
         }
 
+        popupSearch();
     })
 }
 

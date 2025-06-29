@@ -248,6 +248,8 @@
 
     --padding-tb-25_7-lr-20: 25.7px 20px;
 
+    --padding-tb-30-lr-15: 30px 15px;
+
     --padding-y-lg-x-2xl: 30px 50px;
 
     --padding-y-2xl-x-md4: 50px 28px;
@@ -273,6 +275,8 @@
     --padding-t10-r-20-b10-l-55: 10px 20px 10px 55px;
 
     --padding-t13-r-20-b13_5-l-55: 13px 20px 13.5px 55px;
+
+    --padding-t15-r80-b15-r25: 15px 80px 15px 25px;
 
     /* display css variables */
 
@@ -326,6 +330,10 @@
 
     --list-style-none: none;
 
+
+    /* outline css variables */
+
+    --outline-none: none;
 
     /* border css variables */
 
@@ -419,6 +427,8 @@
     --width-xl: 56px; 
 
     --width-xxl: 64px;
+
+    --width-xxl2: 65px;
     
     --thumbnail-width: 100px;
 
@@ -449,15 +459,21 @@
 
     --height-xxl: 64px;
 
+    --height-xxl2: 65px;
+
     --card-header-height: 114px;
 
     --thumbnail-height: 134px;
 
     --card-body-height: 151px;
 
+    --container-medium: 565px;
+
     --main-content-height: 590px;
     
     --viewport-height: 860px;
+
+    --view-height: 100vh;
 
         
     /* cursor css variables */
@@ -520,6 +536,8 @@
     --pos-30p: 30%;
 
     --pos-40p: 40%;
+
+    --pos-40-5p: 45%;
 
     --pos-50p: 50%;
 
@@ -643,7 +661,9 @@
  
   --shadow-glow: 0 0 10px rgba(0, 255, 255, 0.6);
 
-   /* overflow css variables */
+
+  /* overflow css variables */
+
 
   --overflow-default: visible;
 
@@ -652,6 +672,34 @@
   --overflow-scroll: scroll;
 
   --overflow-auto: auto;
+
+
+  /* opacity css variables */
+
+  --opacity-0: 0;
+
+  --opacity-10: 0.1;
+
+  --opacity-30: 0.3;
+
+  --opacity-50: 0.5;
+
+  --opacity-70: 0.7;
+
+  --opacity-80: 0.8;
+
+  --opacity-90: 0.9;
+
+  --opacity-100: 1;
+
+
+  /* visibility css variables */
+
+
+  --visibility-show: visible;
+
+  --visibility-hide: hidden;
+
 }
 
 
